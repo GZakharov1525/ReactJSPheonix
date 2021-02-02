@@ -1,6 +1,19 @@
+.container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 10%;
+    background-color: #98ff98;
+    font-size: 1.2rem;
+}
+
 .container img {
-    max-width: 10%;
-    height:auto;
-    padding: 10px;
+    max-width: 15%;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-self: start;
+    padding: 5px;
+    cursor: pointer;
 }
 
