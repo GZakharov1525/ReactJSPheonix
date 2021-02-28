@@ -15,8 +15,10 @@ const Header = () => {
 
   return (
     <div className="container">
-      <img src={HeaderLogo} alt="Logo" onClick={goToHome} />
+      <img src={HeaderLogo} alt="Logo" onClick={goToHome} className="logo"/>
+      <div className="nav-container">
       <NavBar />
+      </div>
     </div>
   );
 };
