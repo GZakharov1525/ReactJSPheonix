@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom'
+import CustomLink from './CustomLink'
 
 const NavBar = () => {
     return (
         <div>
-            <Link to='/'> Home </Link> |
-            <Link to='/About'> About Us </Link> |
-            <Link to='/Portfolio'> Portfolio </Link> |
-            <Link to='/Design' label="Coming Soon"> DIY Design </Link> |
-            <Link to='/Homeowner' label="Coming Soon"> For Homeowners </Link> |
-            <Link to='/Contact'> Contact Us </Link>
-        </div>
+        <CustomLink to='/'> Home </CustomLink> |
+        <CustomLink to='/About'> About Us </CustomLink> |
+        <CustomLink to='/Portfolio'> Portfolio </CustomLink> |
+        <CustomLink to='/Design' label="Coming Soon"> DIY Design </CustomLink> |
+        <CustomLink to='/Homeowner' label="Coming Soon"> For Homeowners </CustomLink> |
+        <CustomLink to='/Contact'> Contact Us </CustomLink>
+    </div>
     )
 }
 

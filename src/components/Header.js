@@ -11,7 +11,8 @@ const Header = () => {
   //extends to the end of flexbox, this is unintended and cannot be removed
   //with any CSS styling. Thus far the useHistory hook has been the only solution.
   const history = useHistory();
-  const goToHome = () => history.push("/");
+  //const goToHome = () => history.push("/");
+  const goToHome = () => history.replace("/");
 
   return (
     <div className="container">
