@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Home from "./components/Home";
+import Gallery from "./components/Gallery";
 import ContactForm from "./components/ContactForm"
 import { Switch } from "react-router-dom/cjs/react-router-dom.min";
 
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/About" component={About} />
           <Route path="/Contact" component={ContactForm} />
+          <Route path="/Portfolio" component={Gallery} />
         </Switch>
         <Footer />
       </div>
