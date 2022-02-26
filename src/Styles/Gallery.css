@@ -1,28 +1,83 @@
 /* Target the overall grid */
-.img-grid{
+/* .img-grid{
     margin: 20px auto;
     display: grid;
     grid-template-columns: 1ft 1ft 1ft;
     grid-gap: 40px;
+} */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.img-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: dimgray;
+    height: 100vh;
 }
 
 /* Target the individual image container */
-.img-card{
+/* .img-card{
     overflow: hidden;
     display: block;
     height: 0;
     padding: 50% 0;
     position: relative;
     opacity: 0.8;
+} */
+
+.img-card{
+    /* width: 270px; */
+    flex-basis: 300px;
+    /* width: 30vw; */
+    height: 400px;
+    /* height: 40vh; */
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #98ff98;
+    overflow: auto;
+}
+
+.img-card img{
+    /* height: 150px; */
+    height: 60%;
+    /* stretches the img */
+    width: 100%;
+     /* contain keeps the aspect ratio of the original photo
+        cover will zoom in the image but cover the space. */
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+}
+
+.img-card p{
+    padding: 0px 5px;
+}
+
+.img-card:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.tag-bubble{
+    background-color: rgb(153, 152, 152);
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 2px;
 }
 
 /* Target the image inside the image container */
-.img-card img{
+/* .img-card img{
     min-width: 100%;
     min-height: 100%;
     max-width: 100%;
-    /* max-height: 100%; */
+    max-height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
