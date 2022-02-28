@@ -139,18 +139,3 @@
     );
     transition: all 0.4s ease-out;
   }
-  
-  .form-input-login {
-    font-size: 0.8rem;
-    margin-top: 10px;
-    color: #fff;
-    width: 80%;
-    text-align: center;
-  }
-  
-  .form-input-login a {
-    text-decoration: none;
-    color: #98ff98;
-    font-weight: 600;
-  }
-  

@@ -14,6 +14,7 @@
     justify-content: flex-start;
     padding: 5px;
     cursor: pointer;
+    /* can set a background color to see changes or bug-fix */
     /* background-color: red; */
 }
 

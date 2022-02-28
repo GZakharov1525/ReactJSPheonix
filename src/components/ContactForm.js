@@ -6,10 +6,6 @@ import "../Styles/Form.css"
 const Contact = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    // function submitForm() {
-    //     setIsSubmitted(true)
-    // }
-
     const submitForm = useCallback(() => {
         setIsSubmitted(true)
     }, [setIsSubmitted])

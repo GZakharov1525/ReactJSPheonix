@@ -1,4 +1,5 @@
 .backdrop{
+    /* dim the background when a modal is brought up */
     position: fixed;
     top: 0;
     left: 0;

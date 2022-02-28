@@ -7,7 +7,7 @@ const FormFields = ({submitForm}) => {
 
     return (
         <div className="form-content-right">
-            <form className="form" onSubmit={handleSubmit}>
+            <form className="form" onSubmit={handleSubmit} method="POST">
                 <h1>
                     We serve the Greater Toronto Area with Landscaping / Hardscaping
                     services. Contact us today for an estimate, or if you have any
@@ -42,8 +42,8 @@ const FormFields = ({submitForm}) => {
                 </div>
                 <div className="form-inputs">
                     <label htmlFor="message" className="form-label"> Message </label>
-                    <input id="message" type="text" name="message" className="form-input" placeholder="Type your message here"
-                    value={values.message} onChange={handleChange}></input>
+                    <textarea id="message" type="text" name="message" className="form-input" placeholder="Type your message here"
+                    value={values.message} onChange={handleChange}></textarea>
                     {errors.message && <p>{errors.message}</p>}
                 </div>
                 <button className="form-input-btn" type="submit"> Send </button>

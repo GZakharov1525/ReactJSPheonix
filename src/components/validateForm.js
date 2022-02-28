@@ -1,6 +1,8 @@
 export default function validateForm(values) {
     let errors = {};
 
+    // Validation for each of the input fields.
+
     if(!values.name.trim()) {
         errors.name = "Name is required"
     }

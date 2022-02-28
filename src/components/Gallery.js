@@ -8,8 +8,7 @@ const Gallery = ({setSelectedImage}) => {
         <div className="img-grid">
             { docs && docs.map(doc => (
                 <div className = "img-card" key = {doc.id} onClick={() => setSelectedImage(doc)}>
-                    <img src={doc.url} alt={"see image description"}></ img>
-                    {/* <p> Text Lorem ipsum dollar tree united station over operation Text Lorem ipsum dollar tree united station over operation Text Lorem ipsum dollar tree united station over operation Text Lorem ipsum dollar tree united station over operation Text Lorem ipsum dollar tree united station over operation</p> */}
+                    <img src={doc.url} alt="description has details"></ img>
                     <p> {doc.description} </p>
                     <br></br>
                     <p> Tags: {doc.tags.map(tag => (
