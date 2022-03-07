@@ -1,6 +1,6 @@
 .landing--CTA {
-    background: url('../landingPageImage.jpg') center center/cover no-repeat;
-    height:100vh;
+    background: url('../images/landingPageImage.jpg') center center/cover no-repeat;
+    height:90vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -26,6 +26,11 @@
     margin-bottom: 30px;
     border: 1px solid;
     transition: all 0.3s ease-out;
+}
+
+#btn--CTA:hover
+{
+    cursor: pointer;
 }
 
 .description {

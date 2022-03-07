@@ -1,10 +1,12 @@
 import "../Styles/About.css"
+// import aboutImage from "../images/aboutCat.jpg"
 
 const About = () => {
     return (
         <div className='about-container'>
              <div className='about-media'>
                 {/* add video or photo here later */}
+                {/* <img src={aboutImage} alt="Cat playing with flower on top of landscaping pavers."></img> */}
             </div>
             <div className='about-description'>
                 <h1> A Father & Son Family Company</h1>
@@ -22,7 +24,7 @@ const About = () => {
 
                     Focusing on providing high quality stonework we are proud to say
                     that we have thrived purely on word of mouth until our first push 
-                    to expand our online presence in 2022. The greatest complement for
+                    to expand our online presence in 2022. The greatest compliment for
                     us is when our customers recommend us to family, friends and neighbors.
                     We are also proud to say that we have had many return customers over
                     the years who purchased a new home and knew the people they could

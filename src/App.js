@@ -16,12 +16,12 @@ function App() {
         <Header />
         {/* home page should have 'exact' keyword otherwise home page will be 
         matched and displayed for every path 
-        e.g /AboutUs would show it + home page */}
+        e.g /About would show it + home page */}
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/About" component={About} />
-          <Route path="/Contact" component={ContactForm} />
           <Route path="/Portfolio" component={Portfolio} />
+          <Route path="/Contact" component={ContactForm} />
         </Switch>
         <Footer />
       </div>

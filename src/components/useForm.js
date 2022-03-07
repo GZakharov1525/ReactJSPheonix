@@ -26,24 +26,25 @@ const useForm = (callback, validate) => {
 
         setErrors(validate(values));
         setIsSubmitting(true);
-
-        // Send a POST to the backend to handle data from form.
-        // Use appropriate Content-Type based on how you plan to parse
-        // the JSON data in your backend.
-        const res = fetch('http://localhost:5000/Contact', {
-            method: 'POST',
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(values)
-        }).then(() => {
-            console.log('email data sent.', res);
-        })
     };
 
+    // Only submit the data when there are no errors.
     useEffect(() => {
         if(Object.keys(errors).length === 0 && isSubmitting) {
+            // Send a POST to the back-end to handle data from form.
+            // Use appropriate Content-Type based on how you plan to parse
+            // the JSON data in your backend.
+            const res = fetch('http://localhost:5000/Contact', {
+                method: 'POST',
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(values)
+            }).then(() => {
+                console.log('email data sent.', res);
+            })
+
             callback();
         }
-    }, [errors, isSubmitting, callback]);
+    }, [errors, isSubmitting, callback, values]);
 
     return {handleChange, values, handleSubmit, errors}
 }

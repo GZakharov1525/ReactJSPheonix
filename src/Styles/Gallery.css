@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     background-color: dimgray;
     height: 100vh;
+    background: url('../images/portfolioBG.jpg') center center/cover no-repeat;
 }
 
 .img-card{
@@ -46,6 +47,7 @@
 .img-card:hover{
     transform: scale(1.05);
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .tag-bubble{

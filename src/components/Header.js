@@ -1,7 +1,7 @@
 import "../Styles/Header.css";
 import { useHistory } from "react-router-dom";
 import NavBar from "./NavBar";
-import HeaderLogo from "../logoCircleTitle.png";
+import HeaderLogo from "../images/logoCircleTitle.png";
 
 const Header = () => {
   // flex box style + <Link> wrapping an <img> creates odd behavior.

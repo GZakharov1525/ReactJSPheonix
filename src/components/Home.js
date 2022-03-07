@@ -1,12 +1,17 @@
+import { useHistory } from 'react-router-dom';
 import "../Styles/Home.css";
 
 const Home = () => {
+
+  const history = useHistory();
+  const redirect = () => history.push('/Contact');
+
   return (
     <div className="landing-container">
       <div className="landing--CTA">
         {/* <img src={landingImage} alt='Poolside stonework'></img> */}
         <span>Let's Build Your Oasis.</span>
-        <button id="btn--CTA">Get Started</button>
+        <button onClick={redirect} id="btn--CTA">Get Started</button>
       </div>
       <div className="description">
         <h1>Honesty. Workmanship. Integrity.</h1>

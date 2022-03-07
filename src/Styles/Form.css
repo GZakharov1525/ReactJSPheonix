@@ -1,4 +1,11 @@
+.form-parent{
+  background: url('../images/portfolioBG2.jpg') center center/cover no-repeat;
+  display: flex;
+}
+
 .form-container {
+    /* Grey bg to keep the image from peeking through */
+    background-color: grey; 
     margin: 100px auto;
     width: 90%;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
