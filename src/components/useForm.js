@@ -34,7 +34,7 @@ const useForm = (callback, validate) => {
             // Send a POST to the back-end to handle data from form.
             // Use appropriate Content-Type based on how you plan to parse
             // the JSON data in your backend.
-            const res = fetch('http://localhost:5000/Contact', {
+            const res = fetch('gator4216.hostgator.com', {
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(values)
