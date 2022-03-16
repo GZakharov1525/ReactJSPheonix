@@ -5,7 +5,7 @@ I also use Firebase's Firestore and storage capabilities for the gallery page, t
 
 The hosting is done through a 3rd party hosting company, I wanted to finish this project up at this stage and move on to working on other things so I decided to change the scope from including server-side work and hosting on my own through apps like Heroku or github pages.
 
-See the website here: pheonixlandscaping.ca
+See the website here:  [Hosted Website](pheonixlandscaping.ca)
 
 Current issues: (On the TO-DO list)
 -SendGrid is not receiving the requests from the deployed back-end (works from the development build on localhost). 
